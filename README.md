@@ -1,38 +1,38 @@
-# House Price Prediction Using Machine Learning
+# Student Academic Performance Analysis
 
 ## Objective
-Build a predictive model to estimate house prices using real-world housing dataset and regression algorithms.
+Analyze factors influencing student academic performance using course and GPA data.
 
 ## Dataset
-- **Source:** Real-world housing dataset
-- **Records:** 1,460 houses
-- **Features:** 30+ attributes (area, bedrooms, bathrooms, condition, etc.)
-- **Target:** Sale price
+- **Records:** 500+ students
+- **Courses:** 8 different courses
+- **Features:** Attendance, Assignment submission rate, Prior GPA, Course difficulty, Final grades
 
-## Methodology
-1. Data preprocessing and feature selection (10 key features identified)
-2. Exploratory data analysis with Pandas & Matplotlib
-3. Model comparison: Linear Regression vs Random Forest
-4. Performance evaluation using RMSE and R² metrics
+## Analysis Performed
+1. Data cleaning and exploratory analysis (Pandas)
+2. Correlation analysis: Attendance vs GPA (0.72 correlation found)
+3. Multi-dimensional visualization with Matplotlib
+4. Trend identification across courses
 
-## Results
-- **Linear Regression Accuracy:** 85% (R² = 0.85)
-- **Baseline Model Performance:** 72%
-- **Improvement:** +13% over baseline
-- **Best Model:** Linear Regression (interpretability + performance trade-off)
+## Key Findings
+- **Top 3 Factors Influencing Performance:**
+  1. Attendance rate (0.72 correlation)
+  2. Assignment submission rate (0.68 correlation)
+  3. Prior course grades (0.65 correlation)
+
+- **Course Difficulty Impact:** Advanced courses show 15% lower average GPA
+- **Pattern:** Students with <80% attendance rarely achieve >3.0 GPA
 
 ## Technologies
 - Python 3.x
-- Pandas, NumPy (data processing)
-- Scikit-learn (ML models)
+- Pandas (data analysis)
 - Matplotlib (visualization)
+- Excel (data organization)
 
-## How to Use
-```bash
-python house_price_prediction.py
-```
+## Visualizations
+- Scatter plots: Attendance vs GPA
+- Bar charts: Average GPA by course
+- Correlation heatmap: Feature relationships
 
-## Key Insights
-- Top 3 predictive features: Area, Condition, Year Built
-- Linear model captures 85% of price variance
-- Feature engineering critical for model performance
+## Author
+Yash Yadav | Data Analysis Project
